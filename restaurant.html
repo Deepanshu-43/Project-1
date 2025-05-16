@@ -3,16 +3,60 @@
 <head>
   <title>Menu</title>
   <h1 align="center">ABC Restaurant</h1>
+  <style>
+    h1{
+      font-family: cursive;
+      color:blueviolet;
+    }
+  button{
+    background-color: black;
+    border-color: aliceblue;
+    border-radius: 5cm;
+    background-size: 5cm;
+    font-family: fantasy;
+    color:white;
+  }
+  body{
+    background-image:url(https://img.pikbest.com/backgrounds/20181002/hot-pot-restaurant-opening-poster-background_1846562.jpg!w700wp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  label{
+    color: blueviolet;
+    border-radius: 7cm;
+  }
+  marquee{
+    z-index:"+1" ;
+    background-image:url(https://img.freepik.com/free-vector/restaurant-menu-template_23-2147631125.jpg);
+    font-family: fantasy;
+    color:black;
+    font-size: large;
+  }
+  </style>
+  <section>
+    <marquee behavior="alternate"; direction=""; height="150cm" ;width="1200cm";>Offers available soon!!</marquee>
+  </section>
 </head><hr size="3">
 <body>
-  <h2>Select the Food Items</h2>
+  <section style="background-color: brown;font-family: cursive;color:white;">
+    <h2>Select the Food Items</h2>
   <form>
     <label><input type="checkbox" name="food" value="Pizza"> Pizza</label><br>
     <label><input type="checkbox" name="food" value="Burger"> Burger</label><br>
     <label><input type="checkbox" name="food" value="Pasta"> Pasta</label><br>
     <label><input type="checkbox" name="food" value="Salad"> Salad</label><br>
     <label><input type="checkbox" name="food" value="Ice Cream"> Ice Cream</label><br>
-    <button type="submit">Submit</button>
+    <center>
+      <script>
+        function fun(){
+            alert("Your order has been recieved successfully!!");
+        }
+      </script>
+      <button type="submit" onclick="fun()">Submit</button>
+      <button type="reset" style="background-color: brown;background-size:0cm;border: radius 20cm;">&#10227</button>
+    </center>
   </form>
+  </section>
 </body>
 </html>
